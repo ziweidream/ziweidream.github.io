@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build A Magical World</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section id="about2">
+    <div id="introduction" class="container">
+      <div class="greeting text-center">
+        <h1 id='magic'>I am here to help you build a magical world -- <br>where your dream comes true!</h1>
+        <h4>Hi! My name is Zi Wei. I am a DApp developer and Full Stack Web Developer based in Canada.</h4>
+      </div>
+      <!-- CV -->
+      <div id="skills" class=" row text-center">
+        <!-- skills -->
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-backend">Skills
+            - Back-End</button>
+          <div id="skills-backend" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Back-End</li>
+              <li class="list-group-item list-group-item-primary">Node.js</li>
+              <li class="list-group-item list-group-item-secondary">Express.js</li>
+              <li class="list-group-item list-group-item-secondary">Docker</li>
+              <li class="list-group-item list-group-item-success">Chai</li>
+              <li class="list-group-item list-group-item-danger">MongoDB</li>
+              <li class="list-group-item list-group-item-warning">GraphQL</li>
+              <li class="list-group-item list-group-item-info">SQL</li>
+              <li class="list-group-item list-group-item-light">API development</li>
+              <li class="list-group-item list-group-item-dark">CRUD</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-frontend">Skills
+            - Front-End</button>
+          <div id="skills-frontend" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Front-End</li>
+              <li class="list-group-item list-group-item-primary">React.js</li>
+              <li class="list-group-item list-group-item-primary">Next.js</li>
+              <li class="list-group-item list-group-item-secondary">D3.js</li>
+              <li class="list-group-item list-group-item-success">Redux/li>
+              <li class="list-group-item list-group-item-danger">Javascript</li>
+              <li class="list-group-item list-group-item-warning">jQuery</li>
+              <li class="list-group-item list-group-item-info">HTML</li>
+              <li class="list-group-item list-group-item-light">CSS, SASS</li>
+              <li class="list-group-item list-group-item-dark">Bootstrap</li>
+              <li class="list-group-item list-group-item-dark">Semantic-UI</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-blockchain">Skills
+            - Blockchain</button>
+          <div id="skills-blockchain" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Blockchain</li>
+              <li class="list-group-item list-group-item-primary">Solidity</li>
+              <li class="list-group-item list-group-item-secondary">Web3.js</li>
+              <li class="list-group-item list-group-item-success">Ganache</li>
+              <li class="list-group-item list-group-item-danger">Ethereum</li>
+              <li class="list-group-item list-group-item-warning">Smart Contract</li>
+              <li class="list-group-item list-group-item-info">DApp</li>
+              <li class="list-group-item list-group-item-light">Metamask</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- certifications -->
+      <div id="certifications" class=" row text-center">
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-fullstack">Certifications
+            - Full Stack</button>
+          <div id="certifications-fullstack" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Free Code Camp</li>
+              <li class="list-group-item list-group-item-primary">Full Stack Developer Certification</li>
+              <li class="list-group-item list-group-item-secondary">Responsive Web Design Certification</li>
+              <li class="list-group-item list-group-item-success">Algorithms and Data Structures Certification</li>
+              <li class="list-group-item list-group-item-danger">Front End Libraries Certification</li>
+              <li class="list-group-item list-group-item-warning">Data Visualization Certification</li>
+              <li class="list-group-item list-group-item-info">APIs and Microservices Certification</li>
+              <li class="list-group-item list-group-item-dark">Information Security and Quality Assurance Certification</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-smart-contract">Certifications
+            - Smart Contract</button>
+          <div id="certifications-smart-contract" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Blockchain Council</li>
+              <li class="list-group-item list-group-item-primary">Certified Smart Contract Developer</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-blockchain">Certifications
+            - Blockchain</button>
+          <div id="certifications-blockchain" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">The State University of New York & University at Buffalo(Coursera)</li>
+              <li class="list-group-item list-group-item-primary">Blockchain Specialization</li>
+              <li class="list-group-item list-group-item-secondary">Smart Contracts Certification</li>
+              <li class="list-group-item list-group-item-success">Decentralized Applications(Dapps) Certification</li>
+              <li class="list-group-item list-group-item-danger">Blockchain Platforms Certification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CV -->
+      <div id="cv2" class=" row text-center">
+        <!-- education -->
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#education">Education</button>
+          <div id="education" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fas fa-graduation-cap"></i></li>
+              <li class="list-group-item list-group-item-primary">
+                <p>Free Code Camp</p>
+                <p>2017-2018</p>
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                <p>Graduate Diploma in Internet Business Technology</p>
+                <p>McGill University</p>
+                <p>Canada</p>
+                <p>2016– 2017</p>
+              </li>
+              <li class="list-group-item list-group-item-success">
+                <p>Ph.D., Neuroscience</p>
+                <p>Faculty of Medicine</p>
+                <p>Université de Montréal</p>
+                <p> Canada</p>
+                <p>2007 – 2012</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- work experience -->
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#work-experience">Work
+            Experience</button>
+          <div id="work-experience" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fas fa-briefcase"></i></li>
+              <li class="list-group-item list-group-item-success">
+                <p>-Freelancing</p>
+                <p>2018 - present</p>
+              </li>
+              <li class="list-group-item list-group-item-info">
+                <p>Postdoc researcher</p>
+                <p>Department of Medical Genetics</p>
+                <p>University of Calgary</p>
+                <p>Canada</p>
+                <p>2012 – 2014</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <a id="portfolio" class="nav-item nav-link" href="#">
+            <button type="button" class="btn btn-outline-dark btn-md cv-btn">Portfolio</button>
+          </a>
+        </div>
+
+        <!-- profiles on external sites -->
+        <div class="col">
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#connect">Connect</button>
+          <div id="connect" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fas fa-user-circle"></i></li>
+              <li class="list-group-item list-group-item-primary">
+                <p><a href="https://github.com/ziweidream" style="color:#333;">Profile on Github</a></p>
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                <p><a href="https://www.freecodecamp.org/ziweidream" style="color:#333;">Profile in Free Code Camp</a></p>
+              </li>
+              <li class="list-group-item list-group-item-success">
+                <p><a href="https://codepen.io/ziweidream/" style="color:#333;">Profile on Codepen</a></p>
+              </li>
+              <li class="list-group-item list-group-item-warning">
+                <p><a href="https://www.coursera.org/account/accomplishments/specialization/7H9QRJM8VCHE" style="color:#333;">Blockchian
+                    Specialization</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <a id="contact" class="nav-item nav-link" href="#">
+            <button type="button" class="btn btn-outline-dark btn-md cv-btn">Contact</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio2">
+    <h1 class="text-center"><strong>Portfolio</strong></h1>
+    <div class="text-center" id="project-btn">
+      <div id="p-btn" class="btn-group text-center">
+        <button type="button" id="solidity-btn" class="btn btn-outline-dark btn-md project-btn">Ethereum DApps -
+          Solidity, Web3, and React
+        </button>
+        <button type="button" id="node-btn" class="btn btn-outline-dark btn-md project-btn">Node.js, Express.js, and
+          Database</button>
+        <button type="button" id="d3-btn" class="btn btn-outline-dark btn-md project-btn">D3 Projects</button>
+        <button type="button" id="react-btn" class="btn btn-outline-dark btn-md project-btn">React Projects</button>
+        <button type="button" id="jquery-btn" class="btn btn-outline-dark btn-md project-btn">JQuery Projects</button>
+      </div>
+    </div>
+    <hr>
+    <div id="projects" class="container wrapper text-center">
+      <div id="solidity">
+        <h2 class="text-center sub">DApps on Ethereum - Solidity Smart Contracts, Web3, and React</h2>
+        <div class="row" id="solidityProjects">
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/token-sale-react/" target="_blank"><img src="https://res.cloudinary.com/dpjg3yr24/image/upload/v1549576282/crowdsale-kitten-token.png"
+                alt="Kitten Token Crowdsale" width="341" height="148">
+              <p class="text">ICO Crowdsale - Kitten Token</p>
+              <p class="text">- Solidity, Web3, React, Ethereum Rinkeby</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://kitten-token.herokuapp.com/" target="_blank"><img src="https://res.cloudinary.com/dpjg3yr24/image/upload/v1549576617/kitten-token-erc20.png"
+                alt="" width="341" height="148">
+              <p class="text"> Kitten Token - An ERC20 Token </p>
+              <p class="text">- Solidity, Web3, React, Ethereum Rinkeby</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://auction-market-ethereum.herokuapp.com/" target="_blank"><img src="https://res.cloudinary.com/dpjg3yr24/image/upload/v1549576417/auction-market.png"
+                alt="" width="341" height="148">
+              <p class="text">Auction Market</p>
+              <p class="text">- Solidity, Web3, React, Ethereum Rinkeby </p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+      <div id="node">
+        <h2 class="text-center sub">Node.js, Express.js, and Database(MongoDB/GraphQL)</h2>
+        <div class="row" id="nodeProjects">
+          <div id="cover" class="col-sm-4 project">
+            <a href="http://voting-app-fullstack-ziwei.surge.sh/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537815417/full-stack-voting-app.png"
+                alt="Simon Game" width="341" height="148">
+              <p class="text">Voting App</p>
+              <p class="text">- Node.js, Express.js, GraphQL, React-Apollo</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://thundering-picture.glitch.me/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537803376/fcc-message-board.png"
+                alt="" width="341" height="148">
+              <p class="text"> Anonymous Message Board </p>
+              <p class="text">- Node.js, Express.js, MongoDB, Chai, Helmet</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://gainful-century.glitch.me/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537808410/fcc-stock-price-checker.png"
+                alt="" width="341" height="148">
+              <p class="text">Stock Price Checker</p>
+              <p class="text">- Node.js, Express.js, MongoDB, Chai, Helmet</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div id="cover" class="col-sm-4 project">
+            <a href="https://arrow-clownfish.glitch.me/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537808728/fcc-personal-library.png"
+                alt="Simon Game" width="341" height="148">
+              <p class="text">Personal Library</p>
+              <p class="text">- Node.js, Express.js, MongoDB, Chai, Helmet</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://amber-quotation.glitch.me/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537810874/fcc-issue-tracker.png"
+                alt="" width="341" height="148">
+              <p class="text">Issue Tracker</p>
+              <p class="text">- Node.js, Express.js, MongoDB, Chai, Helmet</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://gregarious-tangerine.glitch.me/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537811483/fcc-metric-imperial-converter.png"
+                alt="" width="341" height="148">
+              <p class="text">Metric-Imperial Converter</p>
+              <p class="text">- Node.js, Express.js, Chai, Helmet</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project"></div>
+          <div class="col-sm-4 project"></div>
+        </div>
+      </div>
+
+      <div id="d3">
+        <h2 class="text-center sub">D3 Projects</h2>
+        <div class="row" id="d3Projects">
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/bjVydW/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537812661/fcc-treemap.png"
+                alt="" width="341" height="148">
+              <p class="text"> Visualize Movie Sales with a Treemap - D3.js </p>
+              <p class="text">- HTML, CSS and D3</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/D3-map-data-across-globe/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1517524096/d3-across-globe_d7lrpe.jpg"
+                alt="" width="341" height="148">
+              <p class="text"> Map Data across the Globe - D3.js </p>
+              <p class="text">- HTML, CSS and D3</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/D3-force-directed-graph-countries/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1517524299/d3-force-directed_woo9pf.jpg"
+                alt="" width="341" height="148">
+              <p class="text">Data Visualization with a Force Directed Graph - D3.js</p>
+              <p class="text">- HTML, CSS, and D3</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div id="cover" class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/D3-Heatmap/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1517524528/d3-heatmap_t4iiab.jpg"
+                alt="Simon Game" width="341" height="148">
+              <p class="text">Data Visualization with a Heat Map - D3.js</p>
+              <p class="text">- HTML, CSS, and D3</p>
+            </a>
+          </div>
+
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/D3-Scatterplot/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1517524678/d3-scatterplot_qvgs9s.jpg"
+                alt="" width="341" height="148">
+              <p class="text">Data Visualization with a Scatter Plot - D3.js</p>
+              <p class="text">- HTML, SCSS, and D3</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/bar-chart-gdp-d3/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1517524863/bar-chart-gdp-d3_k5ings.jpg"
+                alt="" width="341" height="148">
+              <p class="text">Data Visualization with a Bar Chart - D3.js</p>
+              <p class="text">- HTML, SCSS, and D3</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project"></div>
+          <div class="col-sm-4 project"></div>
+        </div>
+      </div>
+      <div id="react">
+        <h2 class="text-center sub">React Projects</h2>
+        <div class="row" id="reactProjects">
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/roguelike-game-react/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1514646847/roguelike-dungeon-crawler-game_nkgcmx.jpg"
+                alt="" width="341" height="148">
+              <p class="text"> A Roguelike Dungeon Crawler Game </p>
+              <p class="text">- HTML, SCSS, and React</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/game-of-life/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1513373434/game-of-life_kozcwb.jpg"
+                alt="" width="341" height="148">
+              <p class="text">The Game of Life</p>
+              <p class="text">- HTML, SCSS, and React</p>
+            </a>
+          </div>
+          <div id="cover" class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/recipe-box/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1513004760/recipe-box_fwffsb.jpg"
+                alt="Simon Game" width="341" height="148">
+              <p class="text">A Recipe Box</p>
+              <p class="text">- HTML, SCSS, and React</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/fcc-drum-machine/" target="_blank"><img src="https://res.cloudinary.com/dbqmzdcea/image/upload/v1537816001/fcc-drum-machine.png"
+                alt="" width="341" height="148">
+              <p class="text">A Drum Machine</p>
+              <p class="text">- HTML, CSS, and React</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/camper-leader-board/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1513004751/camper-leaderboard_fcltbw.jpg"
+                alt="" width="341" height="148">
+              <p class="text">A Camper Leaderboard</p>
+              <p class="text">- HTML, SCSS, and React</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://ziweidream.github.io/markdown-previewer/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1513004756/mark-down-previewer_jbaoxq.jpg"
+                alt="" width="341" height="148">
+              <p class="text">A Markdown Previewer</p>
+              <p class="text">- HTML, SCSS, and React</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project"></div>
+          <div class="col-sm-4 project"></div>
+        </div>
+      </div>
+      <div id="jquery">
+        <h2 class="text-center sub">JQuery Projects</h2>
+        <div class="row">
+          <div id="cover" class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/XzqQxY/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511453490/simon_game_reuwom.png"
+                alt="Simon Game" width="341" height="148">
+              <p class="text">A Simon Game</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/MOrbma/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511453849/tictactoe_qpls6y.jpg"
+                alt="" width="341" height="148">
+              <p class="text">Tic Tac Toe</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/mqmPGW/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511454247/pomodoro_clock_bz6uun.jpg"
+                alt="" width="341" height="148">
+              <p class="text">A Pomodoro Clock</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/qVZmJQ/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511454433/calculator_pdb2jf.jpg"
+                alt="" width="341" height="148">
+              <p class="text">An Electronic Calculator</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/VMozrj/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511455847/twitch_streamers_emvvzh.jpg"
+                alt="" width="341" height="148">
+              <p class="text">Twitch Streamers</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/LzoBGv/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511456520/wiki_viewer_qqc4gh.jpg"
+                alt="" width="341" height="148">
+              <p class="text">A Wikipedia Viewer</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/Bwewbj/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511458401/local_weather_aigyls.jpg"
+                alt="" width="341" height="148">
+              <p class="text">Local Weather</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+          <div class="col-sm-4 project">
+            <a href="https://codepen.io/ziweidream/full/pWGZyG/" target="_blank"><img src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511459585/newquotes_uds8uj.jpg"
+                alt="" width="341" height="148">
+              <p class="text">New Quotes Generator</p>
+              <p class="text">- HTML, CSS, and JQuery</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact2">
+    <h1 class="text-center">Contact Me</h1>
+    <hr class="style-two">
+    <div class="container">
+      <div class="text-center">
+        <p id="message">
+          I would <em>love</em> to hear from you! </p>
+        <p>Please use the <b><em>Contact Form</em></b> to send me a message.
+        </p>
+      </div>
+      <!--form and form submission adapted on 25/11/17 from
+     https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
+
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxFrsreOcvt50_c1nOKGBr0VlSLz6ajDAPgvYK_/exec">
+
+        <fieldset class="pure-group">
+          <label for="name">Name: </label>
+          <input id="name" name="name" placeholder="Your name" />
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <label for="message">Message: </label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <label for="email"><em>Your</em> Email Address:</label>
+          <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+          <span id="email-invalid" style="display:none">
+            Must be a valid email address</span>
+        </fieldset>
+
+        <button id="send-btn" class="btn btn-success btn-lg button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+      </form>
+    </div>
+    <div style="display:none;" id="thankyou_message">
+      <h2><em>Thanks</em> for contacting me!
+        I will get back to you soon!</h2>
+    </div>
+
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  </section>
+
+  <section id="backtotop-btn">
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
