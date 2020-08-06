@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -27,14 +28,42 @@
     <div id="introduction" class="container">
       <div class="greeting text-center">
         <h1 id='magic'>I am here to help you build a magical world -- <br>where your dream comes true!</h1>
-        <h4>Hi! My name is Zi Wei. I am a Blockchain Developer and Full Stack Web Developer based in Canada.</h4>
+        <h4>Hi! My name is Zi Wei. I am a Blockchain Developer based in Canada.</h4>
       </div>
+      <!-- Contact-->
+      <a id="contact" href="#">
+        <button type="button" class="btn btn-success btn-lg">Contact</button>
+      </a>
       <!-- CV -->
+      <h1 class="text-center"><strong>Skills</strong></h1>
       <div id="skills" class=" row text-center">
         <!-- skills -->
         <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-backend">Skills
-            - Back-End</button>
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-blockchain">Blockchain</button>
+          <div id="skills-blockchain" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Blockchain</li>
+              <li class="list-group-item list-group-item-primary">Solidity</li>
+              <li class="list-group-item list-group-item-secondary">Web3.js</li>
+              <li class="list-group-item list-group-item-success">Ganache</li>
+              <li class="list-group-item list-group-item-danger">Ethereum</li>
+              <li class="list-group-item list-group-item-warning">Smart Contract</li>
+              <li class="list-group-item list-group-item-info">DApp</li>
+              <li class="list-group-item list-group-item-light">Metamask</li>
+            </ul>
+          </div>
+        
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-ml">Machine Learning</button>
+          <div id="skills-ml" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Machine Learning</li>
+              <li class="list-group-item list-group-item-primary">Deep Learning</li>
+              <li class="list-group-item list-group-item-secondary">TensorFlow</li>
+              <li class="list-group-item list-group-item-success">Pandas</li>
+            </ul>
+          </div>
+    
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-backend">Back-End</button>
           <div id="skills-backend" class="collapse">
             <ul class="list-group">
               <li class="list-group-item">Back-End</li>
@@ -49,18 +78,14 @@
               <li class="list-group-item list-group-item-dark">CRUD</li>
             </ul>
           </div>
-        </div>
-
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-frontend">Skills
-            - Front-End</button>
+        
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-frontend">Front-End</button>
           <div id="skills-frontend" class="collapse">
             <ul class="list-group">
               <li class="list-group-item">Front-End</li>
               <li class="list-group-item list-group-item-primary">React.js</li>
               <li class="list-group-item list-group-item-primary">Next.js</li>
               <li class="list-group-item list-group-item-secondary">D3.js</li>
-              <li class="list-group-item list-group-item-success">Redux/li>
               <li class="list-group-item list-group-item-danger">Javascript</li>
               <li class="list-group-item list-group-item-warning">jQuery</li>
               <li class="list-group-item list-group-item-info">HTML</li>
@@ -70,44 +95,49 @@
             </ul>
           </div>
         </div>
-
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-blockchain">Skills
-            - Blockchain</button>
-          <div id="skills-blockchain" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item">Blockchain</li>
-              <li class="list-group-item list-group-item-primary">Solidity</li>
-              <li class="list-group-item list-group-item-secondary">Web3.js</li>
-              <li class="list-group-item list-group-item-success">Ganache</li>
-              <li class="list-group-item list-group-item-danger">Ethereum</li>
-              <li class="list-group-item list-group-item-warning">Smart Contract</li>
-              <li class="list-group-item list-group-item-info">DApp</li>
-              <li class="list-group-item list-group-item-light">Metamask</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#skills-ml">Skills
-            - Machine Learning</button>
-          <div id="skills-ml" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item">Machine Learning</li>
-              <li class="list-group-item list-group-item-primary">Deep Learning</li>
-              <li class="list-group-item list-group-item-secondary">TensorFlow</li>
-              <li class="list-group-item list-group-item-success">Pandas</li>
-            </ul>
-          </div>
-        </div>
       </div>
 
       <!-- certifications -->
-      <div id="certifications" >
-        <div class=" row text-center">
+      <h1 class="text-center"><strong>Certifications</strong></h1>
+      <div id="certifications" class=" row text-center" >
         <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-fullstack">Certifications
-            - Full Stack</button>
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-blockchain">Blockchain</button>
+          <div id="certifications-blockchain" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">The State University of New York & University at Buffalo(Coursera)</li>
+              <li class="list-group-item list-group-item-primary"><a href="https://www.coursera.org/account/accomplishments/specialization/7H9QRJM8VCHE" target="_blank">Blockchain Specialization Certification</a></li>
+              <li class="list-group-item list-group-item-secondary">Smart Contracts Certification</li>
+              <li class="list-group-item list-group-item-success">Decentralized Applications(Dapps) Certification</li>
+              <li class="list-group-item list-group-item-danger">Blockchain Platforms Certification</li>
+            </ul>
+          </div>
+      
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-ml">Deep Learning</button>
+          <div id="certifications-ml" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Coursera(deeplearning.ai)</li>
+              <li class="list-group-item list-group-item-primary"><a href="https://www.coursera.org/account/accomplishments/specialization/XBLB3HE3KFGJ" target="_blank">Deep Learning Specialization Certification</a></li>
+              <li class="list-group-item list-group-item-secondary">Natural Networks and Deep Learning Certification</li>
+              <li class="list-group-item list-group-item-success">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Certification</li>
+              <li class="list-group-item list-group-item-info">Structuring Machine Learning Projects Certification</li>
+              <li class="list-group-item list-group-item-success">Convolutional Neural Networks Certification</li>
+              <li class="list-group-item list-group-item-secondary">Sequence Models Certification</li>
+            </ul>
+          </div>
+        
+          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-tf">TensorFlow</button>
+          <div id="certifications-tf" class="collapse">
+            <ul class="list-group">
+              <li class="list-group-item">Coursera(deeplearning.ai)</li>
+              <li class="list-group-item list-group-item-primary"><a href="https://www.coursera.org/account/accomplishments/specialization/K5CE8GT84KX9" target="_blank">TensorFlow in Practice Specialization Certification</a></li>
+              <li class="list-group-item list-group-item-secondary">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning Certification</li>
+              <li class="list-group-item list-group-item-success">Convolutional Neural Networks in TensorFlow Certification</li>
+              <li class="list-group-item list-group-item-info">Natural Language Processing in TensorFlow Certification</li>
+              <li class="list-group-item list-group-item-success">Sequences, Time Series and Prediction Certification</li>
+            </ul>
+          </div>
+
+      <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-fullstack">Full Stack</button>
           <div id="certifications-fullstack" class="collapse">
             <ul class="list-group">
               <li class="list-group-item">Free Code Camp</li>
@@ -121,79 +151,18 @@
             </ul>
           </div>
         </div>
-
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-smart-contract">Certifications
-            - Smart Contract</button>
-          <div id="certifications-smart-contract" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item">Blockchain Council</li>
-              <li class="list-group-item list-group-item-primary">Certified Smart Contract Developer</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-blockchain">Certifications
-            - Blockchain</button>
-          <div id="certifications-blockchain" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item">The State University of New York & University at Buffalo(Coursera)</li>
-              <li class="list-group-item list-group-item-primary"><a href="https://www.coursera.org/account/accomplishments/specialization/7H9QRJM8VCHE" target="_blank">Blockchain Specialization Certification</a></li>
-              <li class="list-group-item list-group-item-secondary">Smart Contracts Certification</li>
-              <li class="list-group-item list-group-item-success">Decentralized Applications(Dapps) Certification</li>
-              <li class="list-group-item list-group-item-danger">Blockchain Platforms Certification</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class=" row text-center">
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-ml">Certifications
-            - Deep Learning</button>
-          <div id="certifications-ml" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item">Coursera(deeplearning.ai)</li>
-              <li class="list-group-item list-group-item-primary"><a href="https://www.coursera.org/account/accomplishments/specialization/XBLB3HE3KFGJ" target="_blank">Deep Learning Specialization Certification</a></li>
-              <li class="list-group-item list-group-item-secondary">Natural Networks and Deep Learning Certification</li>
-              <li class="list-group-item list-group-item-success">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization Certification</li>
-              <li class="list-group-item list-group-item-info">Structuring Machine Learning Projects Certification</li>
-              <li class="list-group-item list-group-item-success">Convolutional Neural Networks Certification</li>
-              <li class="list-group-item list-group-item-secondary">Sequence Models Certification</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#certifications-tf">Certifications
-            - TensorFlow</button>
-          <div id="certifications-tf" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item">Coursera(deeplearning.ai)</li>
-              <li class="list-group-item list-group-item-primary"><a href="https://www.coursera.org/account/accomplishments/specialization/K5CE8GT84KX9" target="_blank">TensorFlow in Practice Specialization Certification</a></li>
-              <li class="list-group-item list-group-item-secondary">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning Certification</li>
-              <li class="list-group-item list-group-item-success">Convolutional Neural Networks in TensorFlow Certification</li>
-              <li class="list-group-item list-group-item-info">Natural Language Processing in TensorFlow Certification</li>
-              <li class="list-group-item list-group-item-success">Sequences, Time Series and Prediction Certification</li>
-            </ul>
-          </div>
-        </div>
-      </div>
       </div>
 
       <!-- CV -->
-      <div id="cv2" class=" row text-center">
+      <div id="cv2">
         <!-- education -->
+        <h1 class="text-center"><strong>Education</strong></h1>
+        <div id="cv2-education"  class=" row text-center">
         <div class="col">
           <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#education">Education</button>
           <div id="education" class="collapse">
             <ul class="list-group">
               <li class="list-group-item"><i class="fas fa-graduation-cap"></i></li>
-              <li class="list-group-item list-group-item-primary">
-                <p>Free Code Camp</p>
-                <p>2017-2018</p>
-              </li>
               <li class="list-group-item list-group-item-secondary">
                 <p>Graduate Diploma in Internet Business Technology</p>
                 <p>McGill University</p>
@@ -210,7 +179,10 @@
             </ul>
           </div>
         </div>
+      </div>
+      <h1 class="text-center"><strong>Work experience</strong></h1>
         <!-- work experience -->
+        <div id="cv2-experience"  class=" row text-center">
         <div class="col">
           <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#work-experience">Work
             Experience</button>
@@ -234,37 +206,6 @@
               </li>
             </ul>
           </div>
-        </div>
-
-        <div class="col">
-          <a id="portfolio" class="nav-item nav-link" href="#">
-            <button type="button" class="btn btn-outline-dark btn-md cv-btn">Portfolio</button>
-          </a>
-        </div>
-
-        <!-- profiles on external sites -->
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark btn-md cv-btn" data-toggle="collapse" data-target="#connect">Connect</button>
-          <div id="connect" class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fas fa-user-circle"></i></li>
-              <li class="list-group-item list-group-item-primary">
-                <p><a href="https://github.com/ziweidream" style="color:#333;">Profile on Github</a></p>
-              </li>
-              <li class="list-group-item list-group-item-secondary">
-                <p><a href="https://www.freecodecamp.org/ziweidream" style="color:#333;">Profile in Free Code Camp</a></p>
-              </li>
-              <li class="list-group-item list-group-item-success">
-                <p><a href="https://codepen.io/ziweidream/" style="color:#333;">Profile on Codepen</a></p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <a id="contact" class="nav-item nav-link" href="#">
-            <button type="button" class="btn btn-outline-dark btn-md cv-btn">Contact</button>
-          </a>
         </div>
       </div>
     </div>
@@ -564,6 +505,14 @@
 
   <section id="backtotop-btn">
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  </section>
+
+  <section id="social-media">
+    <!-- Add font awesome icons -->
+    <a href="https://github.com/ziweidream" class="fa fa-github" aria-hidden="true"></a>
+    <a href="https://www.freecodecamp.org/ziweidream" class="fa fa-free-code-camp" aria-hidden="true"></a>
+    <a href="https://codepen.io/ziweidream/" class="fa fa-codepen" ></a>
+    <a href="https://twitter.com/ziweidream1" class="fa fa-twitter"></a>
   </section>
 
   <script src="script.js"></script>
